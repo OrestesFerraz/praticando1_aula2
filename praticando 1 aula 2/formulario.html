@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.webp">
+    <style>
+        .container {
+            width: 20vw;
+        }
+        body {
+            background-image: url(fundo-abstrato-azul-01_1150x500.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: monospace;
+            font-size: 2vw;
+
+        }
+        body::-webkit-scrollbar {
+            width: 12px;              
+        }
+        body::-webkit-scrollbar-track {
+            background: #425169;       
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: gray;   
+            border-radius: 20px;      
+            border: 3px solid rgb(71, 71, 71); 
+        }
+        .header {
+            background-color: black;
+            margin: 0;
+            position: sticky;
+            top: 0; /* Add this line */
+        }
+
+        input{
+            background-color: #1f355c8c;
+            color: white;
+            text-align: center;
+            width: 30vw;
+            height: 4vh;
+            font-size: 2vw;
+            border-radius: 0.5vw;
+            transition: 0.6s;
+        }
+
+        input:hover {
+            transform: scale(1.2);
+        }
+
+
+        #bot1 {
+            width: 13vw;
+            height: 6vh;
+        }
+        #bot2 {
+            width: 13vw;
+            height: 6vh;
+        }
+
+        option {
+            background-color: #304770;
+            color: white;
+            text-align: center;
+            width: 30vw;
+            height: 7vh;
+            font-size: 2vw;
+        }
+
+        select {
+            background-color: #1f355c8c;
+            color: white;
+            text-align: center;
+            width: 30vw;
+            height: 7vh;
+            font-size: 2vw;
+            border-radius: 0.5vw;
+            border: #50617e inset 0.3vw;
+        }
+        .margin {
+            margin-top: 2.5vw;
+        }
+        textarea {
+            text-align: center;
+            background-color: #1f355c8c;
+            color: white;
+            border: black double 0.3vw;
+            border-radius: 0.5vw;
+            transition: 0.6s;
+        }
+
+        textarea:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <title>praticando 1 aula 2</title>
+</head>
+<body>  
+        <div class="header">
+            <h1>
+                <marquee behavior="loop" direction="rigth">
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                    praticando 1 formulário HTML aula 2 praticando 1 formulário HTML aula 2
+                </marquee>
+            </h1>
+        </div>
+
+        
+            <form action="submit.html">
+            <div class="margin">
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" value="orestes">
+            </div>
+            <div class="margin">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email">
+            </div>
+            <div class="margin">
+                <br>
+                <label for="telefone">Telefone:</label>
+                <br>
+                <input type="tel">
+                <br>
+            </div>
+            <div class="margin">
+                <label for="url">URL:</label>
+                <br>
+                <input type="url">
+                <br>
+                </div>
+            <div class="margin">
+                <label for="nota">Nota de 0 a 10</label>
+                <br>
+                <input type="number">
+                <br>
+                </div>
+                <div class="margin">
+            </div>
+            <div class="margin">
+                <label for="senha">Senha:</label>
+                <br>
+                <input type="password">
+                <br>
+                </div>
+                <div class="margin">
+            </div>
+            <div class="margin">
+                <label for="data">data</label>
+                <br>   
+                <input type="date">
+                <br>
+            </div>
+            <div class="margin">
+                <label for="cidade">Cidade inde mora:</label>
+                <br>
+                <select name="cidade" id="cidade">
+                <option value="selecionar">selecione uma cidade:</option>
+                <option value="magda">magda</option>  
+                <option value="votuporanga">votuporanga</option>  
+                <option value="valentim gentil">valentim gentil</option>  
+                <option value="parisi">parisi</option>  
+                <option value="alvares florence">alvares florence</option>  
+                <option value="floreal">floreal</option>  
+            </select>
+            <br>
+            </div>
+            <div class="margin">
+                <label for="obs">Observações gerais</label>
+                <br>
+                <textarea name="obs" id="obs" cols="50" rows="10"></textarea>
+            </div>
+            
+            
+            <div class="margin">
+                <br>
+                <label for="tempo">Como está o tempo hoje?</label>
+                <div class="margin">
+                    <br>
+                    <label for="ensolarado">ensolarado</label>
+                    <br>
+                    <input type="radio" id="ensolarado" name="tempo" value="1">
+                    <br>
+                    <label for="nublado">nublado</label>
+                    <br>
+                    <input type="radio" id="nublado" name="tempo" value="2">
+                    <br>
+                    <label for="chuvisco">chuvoso</label>
+                    <br>
+                    <input type="radio" id="chuvoso" name="tempo" value="3">
+                </div>
+
+                <div class="margin">
+                    <h4>
+                        qual fruta você gosta?
+                    </h4>
+                </div>
+
+                <div class="margin">
+                    <label for="abacaxi">abacaxi</label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                <div class="margin">
+                    <label for="melao">melão</label>
+                    <br>
+                    <input type="checkbox" name="melao" id="melao">
+                </div>
+
+
+                <div class="margin">
+                    <label for="abacate">abacate</label>
+                    <br>
+                    <input type="checkbox" name="abacate" id="abacate">
+                </div>
+
+
+
+                <div class="margin">
+                    <label for="banana">banana</label>
+                    <br>
+                    <input type="checkbox" name="banana" id="banana">
+                </div>
+
+            </div>
+            <div class="margin">
+                <input type="submit" value="submit" id="bot1">
+                <input type="reset" value="reset" id="bot2">
+            </div>
+            
+        </form><!--formulario-->
+</body>
+</html>
